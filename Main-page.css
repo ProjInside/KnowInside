@@ -1,82 +1,183 @@
 @charset "UTF-8";
 
+*{
+  box-sizing: border-box;
+}
 
 body
 {
+  margin: 0px;
+  /*width: 100%;*/
+  border: 1px solid rgb(234, 0, 255);
+
   font-family: arial, helvetica, sans-serif;
   font-size: 12px;
   background-image: url(images/bg.gif);
-  margin: 0px;
   /*background-repeat: no-repeat;*/
   background-size: 100%;
-  width: 100%;
   /*background-color: rgb(255, 0, 221);*/
-  border: 1px solid rgb(234, 0, 255);
-  /*max-width: 1900px;*/
-  user-select: none;
+
+
 }
 
 #corpo1
 {
- 
- 
-  margin-left: 35%;
- 
-
+    margin: 0px;
 }
 
 
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: none;
+}
 
-    #navbar 
-    {
-        background:none;
-        position: fixed;
-        top: 0px;
-        margin-right: 250px;
-        width: 100%;
-        display: block;
-        transition: top 0.3s;
-        padding-left: 35%;
-        float: center;
-        
-      }
-      
-      #navbar a 
-      {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 15px;
-        text-decoration: none;
-        font-size: 17px;
-        font-family:'Cinzel', serif;
-        
-        
-        
-      }
-      
-      #navbar a:hover
+.logo img
+{
+  width: 4.5rem;
+  margin: .5rem;
+  margin-left: 1.25rem;
+}
+
+.navbar-links 
+{
+  height: 100%;
+}
+
+.navbar-links ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li
+{
+  list-style-type: none;
+}
+
+.navbar-links li a
+{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  font-family:'Cinzel', serif, 'Times New Roman';
+}      
+
+
+      .navbar-links li:hover
       {
         background-color: rgba(214, 214, 214, 0.267);
         color: rgb(255, 255, 255);
         box-shadow:0 3px 10px 0 rgb(0, 0, 0);
         box-shadow:0 3px 10px 0 rgb(0, 0, 0);
         text-shadow:0px 0px 5px rgb(0, 0, 0);
-
+        
         
       }
 
+
+.botaomenu{
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+
+.botaomenu .bar
+{
+
+  height: 3px;
+  width: 30px;
+  background-color: rgba(214, 214, 214, 0.911);
+  border-radius: 10px;
+
+}
+
+
+
+@media (max-width: 800px)
+{
+
+  @media (orientation: portrait)
+  {
+  
+
+  .navbar
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+    .botaomenu
+    {
+      display: flex;
+    }
+
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+
+    .navbar-links ul
+    {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .navbar-links ul li
+    {
+      text-align: center;
+    }
+
+    .navbar-links ul li a
+    {
+      padding: .5rem 1rem;
+    }
+
+    .navbar-links.active
+    {
+      display: flex;
+    }
+
+  }
+
+}
+
+      .bloco1logo{
+     /*   
+        
+        width: 45%;*/
+        opacity:100;
+        width: 100vw;
+        
+     
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+            
+            position: fixed;
+      }
 
       #title-main
       {
 
             opacity:100;
-            font-size: 180px;
-            color:rgb(255, 255, 255);
-            position: fixed;
             
             
+           
+            width: 375px;
 
       }
 
