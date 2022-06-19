@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+
+body
+{
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  background-image: url(images/bg.gif);
+  margin: 0px;
+  /*background-repeat: no-repeat;*/
+  background-size: 100%;
+  width: 100%;
+  /*background-color: rgb(255, 0, 221);*/
+  border: 1px solid rgb(234, 0, 255);
+  /*max-width: 1900px;*/
+  user-select: none;
+}
+
+#corpo1
+{
+ 
+ 
+  margin-left: 35%;
+ 
+
+}
+
+
+
+    #navbar 
+    {
+        background:none;
+        position: fixed;
+        top: 0px;
+        margin-right: 250px;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+        padding-left: 35%;
+        float: center;
+        
+      }
+      
+      #navbar a 
+      {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family:'Cinzel', serif;
+        
+        
+        
+      }
+      
+      #navbar a:hover
+      {
+        background-color: rgba(214, 214, 214, 0.267);
+        color: rgb(255, 255, 255);
+        box-shadow:0 3px 10px 0 rgb(0, 0, 0);
+        box-shadow:0 3px 10px 0 rgb(0, 0, 0);
+        text-shadow:0px 0px 5px rgb(0, 0, 0);
+
+        
+      }
+
+
+      #title-main
+      {
+
+            opacity:100;
+            font-size: 180px;
+            color:rgb(255, 255, 255);
+            position: fixed;
+            
+            
+
+      }
+
+      .audio{
+        display: grid;
+        grid-template-columns: 300px 700px 300px 500px;
+
+        
+      }
+
+      #headphone
+      {
+        /*margin-left: 400px;*/
+        width: 200px;
+      }
+
+      #animaaudio
+      {
+            opacity: 100%;
+            /*margin-left: 350px;*/
+            margin-top: 90px;
+            font-size: 50px;
+            color:white;
+            font-family: 'Times New Roman', Times, serif;
+      }
+
+      #animaaudio:hover
+      {
+     
+            color:rgb(255, 255, 255);
+            text-shadow:  rgb(255, 82, 154) 0.1em 0.1em 0.1em;
+            font-family: 'Times New Roman', Times, serif;
+            
+            
+      }
+
+      #normaltext
+      {
+          text-align: justify;
+          /*margin-left: 410px;*/
+          font-size: 20px;
+          line-height: 150%;
+          width: 700px;
+          color: white;
+          font-family:'Shadows Into Light';
+      }
+
+      footer
+      {
+        background-color: rgba(214, 214, 214, 0.267);
+      }
+
+      #textfooter
+      {
+        color:white;
+        text-align: center;
+        font-style: italic;
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
+      }
+
+      #jogarbt{
+        margin-left: 35%;
+        text-align: center;
+        padding: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 3px;
+        font-size: 18px;
+        width: 200px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        border: 3px rgb(255, 92, 255) solid;
+        background-color: rgba(255, 255, 255, 0.76);
+      }
+
+      #jogarbt:hover{
+
+        border: 3px rgb(32, 222, 255) solid;
+
+      }
+      
