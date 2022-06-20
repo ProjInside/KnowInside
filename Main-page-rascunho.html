@@ -23,7 +23,9 @@
     <link rel = "stylesheet" href = "Main-page.css">
 
 
-    <script src="hpscript.js" defer></script>
+    <script src="js/hpscript.js" defer></script>
+    <script src="js/particles.min.js" defer></script>
+    <script src="js/bg.js" defer></script>
 
     <!--FONTES-->
 
@@ -39,10 +41,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Slabo+27px&family=Staatliches&display=swap" rel="stylesheet">
+
+  </head>
 
 <body>
 
+  <div id="particles-js"></div>
+  
 
       <!--NAVBAR-->
 
@@ -52,9 +64,9 @@
         
         <a href="#" class="botaomenu">
 
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
 
         </a>
         
@@ -72,37 +84,42 @@
 
         <!--LOGO DA PÁGINA-->
 
-        <br><br><br><br><br><br><br><br>
+        <br><br><br><br>
 
         <div class="bloco-coverphoto">
           <img id="coverphoto" src="coverphoto.png" alt="logo">
         </div>
 
-          <br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-          <br><br><br><br><br>
+          <br><br><br><br>
+      
 
           <!--INFORMAÇÃO BÁSICA DO PROJETO-->
 
-          <div id="firsttext">
+          <div class="apresentacao">
 
-            <p id="normaltext">Inside foi desenvolvido por intermédio de um software de edição de áudio que promove a sensação de “estar escutando como se estivesse na vida real”. Os sons ultrapassam de um ouvido ao outro, sussurros tornam-se mais intensos, e de repente, esquece-se que é só um jogo, pois, devido a qualidade sonora, perde-se a diferenciação da realidade. Temos como objetivo explorar uma nova fonte de realidade virtual jamais estruturada com tanta precisão, e invalidar a estranheza, propondo algo que se torne tão real, que os ouvidos não possam perceber quaisquer diferenças.
-
-              <br><br><br><br>
-    
-              <p id="normaltext">Inside foi desenvolvido por intermédio de um software de edição de áudio que promove a sensação de “estar escutando como se estivesse na vida real”. Os sons ultrapassam de um ouvido ao outro, sussurros tornam-se mais intensos, e de repente, esquece-se que é só um jogo, pois, devido a qualidade sonora, perde-se a diferenciação da realidade. Temos como objetivo explorar uma nova fonte de realidade virtual jamais estruturada com tanta precisão, e invalidar a estranheza, propondo algo que se torne tão real, que os ouvidos não possam perceber quaisquer diferenças.
-    
-                <br><br><br><br>
-
+            <p id="normaltext">
+              Inside foi desenvolvido por intermédio de um software de edição de áudio que consegue
+              lhe fazer sentir como se você estivesse dentro do ambiente do áudio. Os sons se deslocam
+              de um ouvido ao outro, sussurros tornam-se mais intensos, e de repente, por alguns segundos,
+              você perde a diferenciação da realidade. 
+              <br><br>
+              Temos como objetivo explorar uma nova fonte de realidade virtual jamais estruturada com tanta precisão,
+              e invalidar a estranheza, propondo algo que se torne tão real, que os ouvidos não possam
+              perceber quaisquer diferenças.
+            </p>  
           </div>
 
             <!--DIVULGAÇÃO DO AUDIO-->
 
             <div class = "audio">
-              
-              <img src="headphone.png" id="headphone" alt="fone">
+              <div class = "secaudio">
+              <div class="headphonetb">
+                <img src="images/headphone.png" id="headphone" alt="fone">
+              </div>
+              <div class="animaaudiotb">
               <p id="animaaudio">Uma experiência de audio inédita!</p>
+              </div>
+            </div>
             </div>
 
 
@@ -110,25 +127,46 @@
 
           <!--BOTÃO DE JOGAR-->
 
+      
 
-          <a href="https://www.youtube.com"><button id='jogarbt'>JOGAR AGORA</button></a>
-
+          <div class="botaojogar">
+              <div id="borda2">
+              <a href="https://www.youtube.com"><button id='jogarbt'>JOGAR AGORA</button></a>
+              </div>
+            </div>
 
             
 
 
 
         <br><br><br><br><br><br>
+
+        
       
         </body>
 
         <!--RODAPÉ COM CONTATOS E FRASES DE EFEITO-->
 
         <footer>
-        <br><br>
-          <p id="textfooter">“Se eu não posso fazer grandes feitos, eu farei pequenos feitos de forma grandiosa.”<br>
-            - Martin Luther King</p>
-            <br><br><br>
+        
+
+            <div class="footerblocos">
+
+                <div id="textfooter"><p>“Se eu não posso fazer grandes feitos, eu farei pequenos feitos de forma grandiosa.”<br>
+                - Martin Luther King</p></div>
+
+                <div class="contatos">
+
+                  <ul>
+                      <li><a href="Main-page-rascunho.html"><img src="images/github.png" alt="logoo"></a></li>
+                      <li><a href="Main-page-rascunho.html"><img src="images/instagram.png" alt="logoo"></li>
+                      <li><a href="Main-page-rascunho.html"><img src="images/youtube.png" alt="logoo"></li>
+                  </ul>
+
+                </div>
+
+            </div>
+            
         </footer>
 
 </div>

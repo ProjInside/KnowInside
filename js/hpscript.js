@@ -1,3 +1,4 @@
+
 NavBarResponsiva();
 
 function NavBarResponsiva() {
@@ -24,7 +25,7 @@ function NavBarResponsiva() {
             document.body.style.maxWidth = resolucao+"px";
             document.getElementById("corpo1").style.maxWidth = largura+"px";
             //  document.getElementById("corpo1").style.maxHeight = altura+"px";
-*/
+*//*
               window.onscroll = function() 
               {
                   scrollFunction()
@@ -91,4 +92,4 @@ function NavBarResponsiva() {
               }
 
     
- 
+ */
