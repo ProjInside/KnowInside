@@ -22,7 +22,10 @@
 
     <link rel = "stylesheet" href = "Main-page.css">
 
-    <script src></script>
+
+    <script src="js/hpscript.js" defer></script>
+    <script src="js/particles.min.js" defer></script>
+    <script src="js/bg.js" defer></script>
 
     <!--FONTES-->
 
@@ -38,83 +41,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Slabo+27px&family=Staatliches&display=swap" rel="stylesheet">
+
+  </head>
 
 <body>
 
-      <!--MENU DE NAVEGAÇÃO-->
+  <div id="particles-js"></div>
   
-    <!--
-      <div id="navbar">
 
-        <abbr title="Página inicial"><a href="Main-page.html">Home</a></abbr>
-        <abbr title="Roteiros, lores e personagens do jogo."><a href="historias/historias.html">Histórias</a></abbr>
-        <abbr title="Quem somos nós e como desenvolvemos o jogo."><a href="sobre/sobrenos.html">Sobre nós</a></abbr>
-        <abbr title="Nossos meios de contato."><a href="contato/contato.html">Fale conosco</a></abbr>
+      <!--NAVBAR-->
 
-      </div>
+      <nav class= "navbar">
 
-      -->
+        <div class="logo"><a href="Main-page.html"><img src="logo-branca.png" alt="logo do inside branca"></a></div>
+        
+        <a href="#" class="botaomenu">
 
-      <nav id="navbar">
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
 
-        <ul>
-          <li><abbr title="Página inicial"><a href="Main-page.html">Home</a></abbr></li>
-          <li><abbr title="Roteiros, lores e personagens do jogo."><a href="historias/historias.html">Histórias</a></abbr></li>
-          <li><abbr title="Quem somos nós e como desenvolvemos o jogo."><a href="sobre/sobrenos.html">Sobre nós</a></abbr></li>
-          <li><abbr title="Nossos meios de contato."><a href="contato/contato.html">Fale conosco</a></abbr></li>
-        </ul>
+        </a>
+        
+        <div class="navbar-links">
+          <ul>
+            <li><a href="Main-page.html">Home</a></li>
+            <li><a href="Main-page.html">Histórias</a></li>
+            <li><a href="Main-page.html">Sobre o projeto</a></li>
+          </ul>
+        </div>
 
       </nav>
 
-
-
-
-
-
-
       <div id = "corpo1">
-
-      
-
-
-        <!--CONTEÚDO DA PÁGINA-->
-
-   
 
         <!--LOGO DA PÁGINA-->
 
-        <br><br><br><br><br><br><br><br>
+        <br><br><br><br>
 
-        <div class="bloco1logo">
-          <img id="title-main" src="logo.png" alt="logo">
+        <div class="bloco-coverphoto">
+          <img id="coverphoto" src="coverphoto.png" alt="logo">
         </div>
 
-          <br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-          <br><br><br><br><br>
+          <br><br><br><br>
+      
 
           <!--INFORMAÇÃO BÁSICA DO PROJETO-->
 
-          <div id="firsttext">
+          <div class="apresentacao">
 
-            <p id="normaltext">Inside foi desenvolvido por intermédio de um software de edição de áudio que promove a sensação de “estar escutando como se estivesse na vida real”. Os sons ultrapassam de um ouvido ao outro, sussurros tornam-se mais intensos, e de repente, esquece-se que é só um jogo, pois, devido a qualidade sonora, perde-se a diferenciação da realidade. Temos como objetivo explorar uma nova fonte de realidade virtual jamais estruturada com tanta precisão, e invalidar a estranheza, propondo algo que se torne tão real, que os ouvidos não possam perceber quaisquer diferenças.
-
-              <br><br><br><br>
-    
-              <p id="normaltext">Inside foi desenvolvido por intermédio de um software de edição de áudio que promove a sensação de “estar escutando como se estivesse na vida real”. Os sons ultrapassam de um ouvido ao outro, sussurros tornam-se mais intensos, e de repente, esquece-se que é só um jogo, pois, devido a qualidade sonora, perde-se a diferenciação da realidade. Temos como objetivo explorar uma nova fonte de realidade virtual jamais estruturada com tanta precisão, e invalidar a estranheza, propondo algo que se torne tão real, que os ouvidos não possam perceber quaisquer diferenças.
-    
-                <br><br><br><br>
-
+            <p id="normaltext">
+              Inside foi desenvolvido por intermédio de um software de edição de áudio que consegue
+              lhe fazer sentir como se você estivesse dentro do ambiente do áudio. Os sons se deslocam
+              de um ouvido ao outro, sussurros tornam-se mais intensos, e de repente, por alguns segundos,
+              você perde a diferenciação da realidade. 
+              <br><br>
+              Temos como objetivo explorar uma nova fonte de realidade virtual jamais estruturada com tanta precisão,
+              e invalidar a estranheza, propondo algo que se torne tão real, que os ouvidos não possam
+              perceber quaisquer diferenças.
+            </p>  
           </div>
 
             <!--DIVULGAÇÃO DO AUDIO-->
 
             <div class = "audio">
-              
-              <img src="headphone.png" id="headphone" alt="fone">
+              <div class = "secaudio">
+              <div class="headphonetb">
+                <img src="images/headphone.png" id="headphone" alt="fone">
+              </div>
+              <div class="animaaudiotb">
               <p id="animaaudio">Uma experiência de audio inédita!</p>
+              </div>
+            </div>
             </div>
 
 
@@ -122,110 +127,77 @@
 
           <!--BOTÃO DE JOGAR-->
 
+      
 
-          <a href="https://www.youtube.com"><button id='jogarbt'>JOGAR AGORA</button></a>
-
-
-            
-
-          <script>
-
-            let resolucao = screen.width;
-
-            let altura = screen.height;
-
-            console.log(resolucao);
-
-            resolucao = resolucao - 20;
-
-            largura = resolucao;
-
-            console.log(resolucao);
-
-            document.body.style.maxWidth = resolucao+"px";
-            document.getElementById("corpo1").style.maxWidth = largura+"px";
-            //  document.getElementById("corpo1").style.maxHeight = altura+"px";
-
-              window.onscroll = function() 
-              {
-                  scrollFunction()
-              };
-              
-              function scrollFunction() 
-              {
-
-                if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "transparent";
-                  document.getElementById("title-main").style.opacity = "100%";
-
-                } 
-
-
-
-                if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "transparent";
-                  document.getElementById("title-main").style.opacity = "100%";
-
-                }
-
-                if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "rgba(214, 214, 214, 0.267)";
-                  document.getElementById("title-main").style.opacity = "80%";
-          
-                }
-
-                if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "rgba(214, 214, 214, 0.267)";
-                  document.getElementById("title-main").style.opacity = "60%";
-              
-                }
-
-                if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "rgba(214, 214, 214, 0.267)";
-                  document.getElementById("title-main").style.opacity = "40%";
-        
-                }
-
-                if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "rgba(214, 214, 214, 0.267)";
-                  document.getElementById("title-main").style.opacity = "20%";
-                }
-
-                if(document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "rgba(214, 214, 214, 0.267)";
-                  document.getElementById("title-main").style.opacity = "10%";
-                }
-
-                if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
-                {
-                  document.getElementById("navbar").style.backgroundColor = "rgba(214, 214, 214, 0.267)";
-                  document.getElementById("title-main").style.opacity = "0%";
-                }
-
-              }
+          <div class="botaojogar">
+              <div id="borda2">
+              <a href="https://www.youtube.com"><button id='jogarbt'>JOGAR AGORA</button></a>
+              </div>
+            </div>
 
             
 
-          </script>
+
 
         <br><br><br><br><br><br>
+
+        
       
         </body>
 
         <!--RODAPÉ COM CONTATOS E FRASES DE EFEITO-->
 
         <footer>
-        <br><br>
-          <p id="textfooter">“Se eu não posso fazer grandes feitos, eu farei pequenos feitos de forma grandiosa.”<br>
-            - Martin Luther King</p>
-            <br><br><br>
+        
+
+            <div class="footerblocos">
+
+                <div id="textfooter1"><p><span class="marca">“Se eu não posso fazer grandes feitos, eu farei pequenos feitos de forma grandiosa.”<br>
+                <br>- Martin Luther King</span></p></div>
+
+                
+                <div class="infos">
+
+                    <h3 class="subtitlefooter">Redes sociais<br></h3>
+
+                      <div class="redessociais">
+
+                        <ul>
+                            <li><a href="https://github.com/ProjInside" target="_blank"><img src="images/github1.png" alt="logoo"></a></li>
+                            <li><a href="Main-page.html" target="_blank"><img src="images/linkedin1.png" alt="logoo"></a></li>
+                            <li><a href="Main-page.html" target="_blank"><img src="images/youtube2.png" alt="logoo"></a></li>
+                        </ul>
+
+                      </div>
+
+                    <h3 class="subtitlefooter">Contato</h3>
+
+                      <div class="contatos">
+
+                          <h3>EMAIL:</h3>
+                          <div id="email1cont"><p>Pro_inside@Outlook.com</p></div>
+                          <div id="email2cont"><p>Projinside@gmail.com</p></div>
+                          
+                      </div>
+
+                </div>
+
+
+            </div>
+            
+            <div class = "infofinal">
+
+              <div id="infolink1"><a href="Main-page.html" target="_blank">Documentação</a>
+              </div>
+
+              <div id="infolink2"><a href="Main-page.html" target="_blank">Quem somos nós</a>
+              </div>
+
+              <div id="infolink3"><a href="Main-page.html" target="_blank">Apoie essa causa</a>
+              </div>
+
+            </div>
+            
         </footer>
 
 </div>
