@@ -156,8 +156,24 @@ body
       width: 60%;
     }
 
-    pa
+  .footerblocos
+  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+    
+  .footerblocos .infos .redessociais ul li img
+    {
+      width: 50%;
+    }
 
+    .footerblocos .infos .contatos
+    {
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 
 }
 
@@ -178,10 +194,18 @@ body
       width: 55%;
     }
 
-    .footerblocos .contatos ul li img
+    .footerblocos .infos .redessociais ul li img
     {
-      width: 50%
+      width: 38%;
     }
+
+
+    .footerblocos
+  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
 }
 
@@ -201,6 +225,18 @@ body
   .bloco-coverphoto #coverphoto
   {
     width: 50%;
+  }
+
+  .footerblocos .infos .redessociais ul li img
+    {
+      width: 30%;
+    }
+
+  .footerblocos
+  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
 }
@@ -260,6 +296,13 @@ body
     }
     
  
+    .footerblocos .infos .contatos
+    {
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
   }
 
 
@@ -476,19 +519,35 @@ body
 
       footer
       {
-        background-color: rgba(255, 255, 255, 0.048);;
+        background-color: rgba(255, 255, 255, 0.048);
+        padding-bottom: 5%;
       }
 
-      #textfooter
+      #textfooter1 p
       {
         color:white;
         text-align: center;
         font-style: italic;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Cinzel', serif, 'Times New Roman';
         font-size: 1.2em;
         padding: 4%;
         padding-left: 10%;
         padding-right: 10%;
+        transition: width 0.2s ease; 
+        
+      }
+
+      #textfooter1
+      {
+        width: 100%;
+      }
+
+      .marca:hover
+      {
+        background-color: rgba(184, 60, 255, 0.384); 
+        transition-duration: 3.5s; 
+        color: rgb(0, 247, 255);
+     
       }
 
       .footerblocos
@@ -505,7 +564,7 @@ body
         
       }
 
-      .footerblocos .contatos
+      .footerblocos .redessociais
       {
         width: 100%;
         display: flex;
@@ -515,23 +574,134 @@ body
         padding: 1%;
       }
 
-      .footerblocos .contatos ul
+      .footerblocos .redessociais ul
       {
         margin: 0;
         padding: 0;
         display: flex;
         
-      }
-
-      .footerblocos .contatos ul li
-      {
-
         justify-content: center;
         align-items: center;
-
       }
 
-      .footerblocos .contatos ul li img
+      .footerblocos .redessociais ul li
       {
-        width: 20%
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
       }
+
+      .footerblocos .redessociais ul li img
+      {
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 20%;
+        
+      }
+
+      .footerblocos .redessociais ul li a
+      {
+        text-decoration: none;
+      }
+
+      .subtitlefooter
+      {
+        color:rgb(223, 220, 45);
+        text-align: center;
+        font-style: italic;
+        font-family: 'Cinzel', serif, 'Times New Roman';
+        font-size: 1.2em;
+        padding: 4%;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .contatos
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contatos h3
+      {
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Cinzel', serif, 'Times New Roman';
+        margin-right: 2%;
+      }
+
+      #email1cont
+      {
+        padding: 2%;
+      }
+
+      #email1cont p
+      {
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Times New Roman';
+        font-style: italic;
+      }
+
+      #email2cont
+      {
+        padding: 2%;
+      }
+
+
+      #email2cont p
+      {
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Times New Roman';
+        font-style: italic;
+      }
+
+
+      .infofinal 
+      {
+        padding-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #infolink1
+      {
+        padding: 1.5%;
+      }
+
+      #infolink1 a
+      {
+        color: white;
+        text-decoration: none;
+      }
+
+      #infolink2
+      {
+        padding: 1.5%;
+      }
+
+      #infolink2 a
+      {
+        color: white;
+        text-decoration: none;
+      }
+
+      #infolink3
+      {
+        padding: 1.5%;
+      }
+
+      #infolink3 a
+      {
+        color: white;
+        text-decoration: none;
+
+      }
+
+      
