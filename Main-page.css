@@ -156,6 +156,8 @@ body
       width: 60%;
     }
 
+    pa
+
 
 }
 
@@ -174,6 +176,11 @@ body
     .bloco-coverphoto #coverphoto
     {
       width: 55%;
+    }
+
+    .footerblocos .contatos ul li img
+    {
+      width: 50%
     }
 
 }
@@ -478,7 +485,10 @@ body
         text-align: center;
         font-style: italic;
         font-family: 'Dancing Script', cursive;
-        font-size: 20px;
+        font-size: 1.2em;
+        padding: 4%;
+        padding-left: 10%;
+        padding-right: 10%;
       }
 
       .footerblocos
@@ -490,9 +500,9 @@ body
         justify-content: center;
         align-items: center;
         
-        margin-top: 4%;
+        margin-top: 5%;
         
-    
+        
       }
 
       .footerblocos .contatos
@@ -502,6 +512,7 @@ body
         justify-content: center;
         align-items: center;
         position: relative;
+        padding: 1%;
       }
 
       .footerblocos .contatos ul
@@ -512,54 +523,15 @@ body
         
       }
 
-      .navbar
-{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: rgba(214, 214, 214, 0.048);
-    width: 100%;
-}
+      .footerblocos .contatos ul li
+      {
 
-.logo img
-{
-   
-  width: 4.2rem;
-  margin: .5rem;
-  margin-right: 1.5rem;
-  
-}
+        justify-content: center;
+        align-items: center;
 
-.navbar-links 
-{
-  
-  height: 100%;
-  margin-bottom: 0rem;
-}
+      }
 
-.navbar-links ul
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-
-.navbar-links li
-{
-  
-  list-style-type: none;
-}
-
-.navbar-links li a
-{
-  
-  text-decoration: none;
-  color: white;
-  padding: 2.06rem;
-  display: block;
-  font-size: 1.3em;
-  font-family:'Cinzel', serif, 'Times New Roman';
-}      
+      .footerblocos .contatos ul li img
+      {
+        width: 20%
+      }
