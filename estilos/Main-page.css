@@ -14,6 +14,7 @@ body
   font-family: 'Times New Roman', Times, serif;
   font-size: 12px;
   background-color: black;
+  min-width: 150px;
 }
 
 /* CONFIGURAÇÃO BÁSICA DO BACKGROUND */
@@ -123,7 +124,68 @@ body
 
 /* MEDIA QUERIES QUE AJUDARAM NO AJUSTE DE ELEMENTOS DA PÁGINA: */
 
-@media (max-width: 400px)
+
+@media (max-width: 200px)
+{
+
+  .apresentacao #normaltext
+  {
+    font-size:1.1em;
+  }
+
+  .animaaudiotb #animaaudio
+  {
+    font-size: 1.3em;
+  }
+
+  .footerblocos
+  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+    
+  .footerblocos .infos .redessociais ul li img
+  {
+    width: 30%;
+    padding-top: 3%;
+  }
+
+  .footerblocos .infos .redessociais ul
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerblocos .infos .contatos
+  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footerblocos .infos .contatos
+  {
+    font-size: 0.7em;
+  }
+
+  .infofinal
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 0.9em;
+  }
+
+  .bloco-coverphoto #coverphoto
+  {
+    width: 60%;
+  }
+
+}
+
+
+@media (max-width: 400px) and (min-width: 200px)
 {
   .apresentacao #normaltext
   {
@@ -193,6 +255,12 @@ OS SEGUINTES ELEMENTOS. */
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  /*aaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+  .botaojogar #borda2 a #jogarbt
+  {
+    font-size: 1em;
   }
 
 }
@@ -464,12 +532,12 @@ OS SEGUINTES ELEMENTOS. */
 {
   color:rgb(0, 255, 34);
   text-align: center;
-  padding: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 1px;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
   border-radius: 3px;
   font-size: 1.5em;
-  width: 200px;
+  width: 6.5em;
   font-family: 'Staatliches', 'Times New Roman', Times, serif;
   font-weight: bold;
   border: 2px rgba(255, 92, 255, 0.822) solid;

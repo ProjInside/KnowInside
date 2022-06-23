@@ -14,6 +14,7 @@ body
   font-family: 'Times New Roman', Times, serif;
   font-size: 12px;
   background-color: black;
+  min-width: 150px;
 }
 
 /* CONFIGURAÇÃO BÁSICA DO BACKGROUND */
@@ -121,11 +122,86 @@ body
   opacity: 40%;
 }
 
+
 /* MEDIA QUERIES QUE AJUDARAM NO AJUSTE DE ELEMENTOS DA PÁGINA: */
 
-@media (max-width: 400px)
+@media (max-width: 200px)
 {
+  .titulo1block #title1
+  {
+    font-size: 3em !important;
+  }
+
   .apresentacao #normaltext
+  {
+    font-size:1.1em;
+  }
+
+  .animaaudiotb #animaaudio
+  {
+    font-size: 1.3em;
+  }
+
+  .footerblocos
+  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+    
+  .footerblocos .infos .redessociais ul li img
+  {
+    width: 20%;
+    padding-top: 3%;
+  }
+
+  .footerblocos .infos .redessociais ul
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerblocos .infos .contatos
+  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footerblocos .infos .contatos
+  {
+    font-size: 0.7em;
+  }
+
+  .infofinal
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 0.9em;
+  }
+  .titulo1block #title1
+  {
+    font-size: 2.8em !important;
+  }
+.botoesato-bloco
+{
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+ 
+}
+
+
+}
+
+
+@media (max-width: 400px) and (min-width: 200px)
+{
+  .roteiro #normaltext
   {
     font-size:1.2em;
   }
@@ -161,7 +237,7 @@ body
 
   .titulo1block #title1
   {
-    font-size: 4em !important;
+    font-size: 3.8em !important;
   }
 
 
@@ -174,7 +250,7 @@ OS SEGUINTES ELEMENTOS. */
 
 @media (min-width: 400px) and (max-width: 767px)
 {
-  .apresentacao #normaltext
+  .roteiro #normaltext
   {
     font-size:1.2em;
   }
@@ -203,7 +279,7 @@ OS SEGUINTES ELEMENTOS. */
 
   .titulo1block #title1
   {
-    font-size: 5em !important;
+    font-size: 4.8em !important;
   }
 
 }
@@ -211,7 +287,7 @@ OS SEGUINTES ELEMENTOS. */
 
 @media (min-width: 767px) and (max-width: 900px)
 {
-  .apresentacao #normaltext
+  .roteiro #normaltext
   {
     width: 85%;
   }
@@ -236,6 +312,11 @@ OS SEGUINTES ELEMENTOS. */
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  .titulo1block #title1
+  {
+    font-size: 6.5em !important;
   }
 
 }
@@ -310,6 +391,10 @@ OS SEGUINTES ELEMENTOS. */
       font-size: 3.4em;
     }
 
+    .titulo1block #title1
+    {
+      font-size: 7.0em !important;
+    }
 
 }
 
@@ -319,6 +404,11 @@ OS SEGUINTES ELEMENTOS. */
     {
       font-size: 3.4em;
     }
+
+    .titulo1block #title1
+    {
+      font-size: 7.5em !important;
+    }
 }
 
 @media (min-width: 1400px)
@@ -327,15 +417,42 @@ OS SEGUINTES ELEMENTOS. */
     {
       font-size: 3.4em;
     }
+
 }
 
-/* AJUSTES DA COVERPHOTO */
+.botoesato-bloco
+{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  
+ 
+}
+
+.botoesato-bloco #atobt
+{
+  text-decoration: none;
+  color:rgb(0, 255, 34);
+  text-align: center;
+  border-radius: 3px;
+  font-size: 2em;
+
+  font-family: 'Staatliches', 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border: 2px rgba(255, 92, 255, 0.822) solid;
+  background-color: rgba(255, 255, 255, 0.13);
+  text-shadow:  rgb(0, 0, 0) 0.1rem 0.03rem 0.1rem;
+}
+
+/* AJUSTES DO TITULO DA PAGINA */
 
 .titulo1block
 {
   width: 100%;
-  
-  display: flex;
+  display: block;
 }
 
 .titulo1block #title1
@@ -343,42 +460,103 @@ OS SEGUINTES ELEMENTOS. */
   text-align: center;
   color: white;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 9em;
+  font-size: 8em;
   font-weight: normal;
 }
 
 /* AJUSTES DO TEXTO */
 
-.apresentacao
+.containerB1
 {
+  margin: 0;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#normaltext
+.roteiro
 {
-  text-align: justify;
-  /*margin-left: 410px;*/
-  font-size: 1.3em;
-  line-height: 150%;
-  width: 85%;
+  border: 1px rgb(210, 97, 255) groove;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.034);
   max-width: 850px;
   /*padding: 1.3rem;*/
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  color: white;
-  font-family:'Slabo 27px', 'Times New Roman';
-  border: 1px rgb(210, 97, 255) groove;
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.034);
+  padding-left: 3%;
+  padding-right: 4%;
+  width: 85%;
 }
 
-#normaltext:hover
+#subtitle1NT
+{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family:'Cinzel', serif, 'Times New Roman';
+}
+
+#subtitle2NT
+{
+  color: white;
+}
+
+#normaltext
+{
+  
+  text-align: justify;
+  font-size: 1.3em;
+  line-height: 150%;
+  color: white;
+  font-family:'Slabo 27px', 'Times New Roman';
+
+}
+
+.markersubt2NT
+{
+  background-color: rgba(187, 14, 255, 0.322);
+}
+
+.markersubt2NT:hover
+{
+  background-color: rgba(83, 243, 243, 0.589);
+}
+
+.roteiro ul li
+{
+  text-align: justify;
+  font-size: 1.3em;
+  line-height: 150%;
+  color: white;
+  font-family:'Times New Roman';
+  list-style: none;
+}
+
+.roteiro ul li::before
+{
+  content: "• ";
+  color: rgb(0, 255, 255);
+}
+
+.roteiro ul li ul li
+{
+  font-size: 1em;
+  padding-right: 10%;
+  padding-bottom: 1.5%;
+  padding-top: 1%;
+  list-style: none;
+}
+
+.roteiro ul li ul li::before
+{
+  content: "• ";
+  color: rgb(217, 255, 0);
+}
+
+.roteiro:hover
 {
   border: 1px rgb(0, 255, 255) groove;
 }
@@ -450,7 +628,7 @@ OS SEGUINTES ELEMENTOS. */
 {
   width: 100%;
   display: flex;
-  flex-direction: row;
+ 
   justify-content: center;
   align-items: center;
 }
@@ -465,12 +643,12 @@ OS SEGUINTES ELEMENTOS. */
 {
   color:rgb(0, 255, 34);
   text-align: center;
-  padding: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 1px;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
   border-radius: 3px;
   font-size: 1.5em;
-  width: 200px;
+  width: 6.5em;
   font-family: 'Staatliches', 'Times New Roman', Times, serif;
   font-weight: bold;
   border: 2px rgba(255, 92, 255, 0.822) solid;
@@ -482,6 +660,7 @@ OS SEGUINTES ELEMENTOS. */
 {
   border: 1.5px rgb(144, 255, 92) dashed;
 }
+
 
 /* ----- FOOTER ----- */
 
