@@ -190,13 +190,14 @@ body
 
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 75%;
   flex-wrap: wrap;
  
 }
 
-
 }
+
+
 
 
 @media (max-width: 400px) and (min-width: 200px)
@@ -239,6 +240,17 @@ body
   {
     font-size: 3.8em !important;
   }
+
+  .botoesato-bloco
+{
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  flex-wrap: wrap;
+ 
+}
 
 
 }
@@ -428,7 +440,7 @@ OS SEGUINTES ELEMENTOS. */
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  
+  padding-bottom: 5%;
  
 }
 
@@ -442,9 +454,15 @@ OS SEGUINTES ELEMENTOS. */
 
   font-family: 'Staatliches', 'Times New Roman', Times, serif;
   font-weight: bold;
-  border: 2px rgba(255, 92, 255, 0.822) solid;
+  border: 1px rgba(255, 92, 255, 0.822) solid;
   background-color: rgba(255, 255, 255, 0.13);
   text-shadow:  rgb(0, 0, 0) 0.1rem 0.03rem 0.1rem;
+}
+
+.botoesato-bloco #atobt:hover
+{
+  border: 1px rgba(0, 255, 34, 0.822) dashed;
+  color:rgba(255, 92, 255, 0.822);
 }
 
 /* AJUSTES DO TITULO DA PAGINA */
