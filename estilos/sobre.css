@@ -195,6 +195,12 @@ body
  
 }
 
+.containerHT .HiddenText
+{
+  font-size: .9em;
+  padding: 5%;
+}
+
 }
 
 
@@ -250,6 +256,12 @@ body
   width: 75%;
   flex-wrap: wrap;
  
+}
+
+.containerHT .HiddenText
+{
+  font-size: 1.3em;
+  padding: 5%;
 }
 
 
@@ -511,7 +523,7 @@ OS SEGUINTES ELEMENTOS. */
 {
   color: rgba(255, 255, 255, 0);
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family:'Cinzel', serif, 'Times New Roman';
   transition: color 5s ease;
 }
