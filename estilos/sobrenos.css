@@ -1,3 +1,160 @@
+*
+{
+  box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES GERAIS DO BODY */
+
+body
+{
+  margin: 0px;
+  border: 1px solid rgb(234, 0, 255);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  background-color: black;
+  min-width: 150px;
+}
+
+/* CONFIGURAÇÃO BÁSICA DO BACKGROUND */
+
+#particles-js 
+{
+	height: 100vh; 
+	width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+/* CONFIGURAÇÕES DA LOGO QUE APARECE NA NAVBAR */
+
+.logo img
+{
+  width: 4.2rem;
+  margin: .5rem;
+  margin-right: 1.5rem;
+}
+
+/*CONFIGURAÇÕES DA NAVBAR: */
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(214, 214, 214, 0.048);
+    width: 100%;
+}
+
+.navbar-links 
+{
+  height: 100%;
+  margin-bottom: 0rem;
+}
+
+.navbar-links ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li
+{
+  list-style-type: none;
+}
+
+.navbar-links li a
+{
+  text-decoration: none;
+  color: white;
+  padding: 2.06rem;
+  display: block;
+  font-size: 1.3em;
+  font-family:'Cinzel', serif, 'Times New Roman';
+}      
+
+
+.navbar-links li:hover
+{
+  background-color: rgba(214, 214, 214, 0.185);
+  color: rgb(255, 255, 255);
+  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
+  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
+  text-shadow:0px 0px 5px rgb(0, 0, 0);
+}
+
+/* CONFIGURAÇÃO DA NAVBAR MOBILE: */
+
+.botaomenu{
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.botaomenu .bar
+{
+  height: 2.7px;
+  width: 26px;
+  background-color: rgba(214, 214, 214, 0.911);
+  border-radius: 10px;
+}
+
+.botaomenu #bar1
+{
+  opacity: 90%;
+}
+
+.botaomenu #bar2
+{
+  opacity: 65%;
+}
+
+.botaomenu #bar3
+{
+  opacity: 40%;
+}
+
+
+.botoesato-bloco
+{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 5%;
+ 
+}
+
+.botoesato-bloco #atobt
+{
+  text-decoration: none;
+  color:rgb(0, 255, 34);
+  text-align: center;
+  border-radius: 3px;
+  font-size: 2em;
+
+  font-family: 'Staatliches', 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border: 1px rgba(255, 92, 255, 0.822) solid;
+  background-color: rgba(255, 255, 255, 0.13);
+  text-shadow:  rgb(0, 0, 0) 0.1rem 0.03rem 0.1rem;
+}
+
+.botoesato-bloco #atobt:hover
+{
+  border: 1px rgba(0, 255, 34, 0.822) dashed;
+  color:rgba(255, 92, 255, 0.822);
+}
+
+
 @charset "UTF-8";
 
 /* MEDIA QUERIES QUE AJUDARAM NO AJUSTE DE ELEMENTOS DA PÁGINA: */
@@ -272,13 +429,13 @@ OS SEGUINTES ELEMENTOS. */
 
   .devapresentacao .fotoapresentacao img
   {
-  width: 70%;
+    width: 70%;
   }
 
-.devapresentacao #subtitle2NT
-{
-  text-align: center;
-}
+  .devapresentacao #subtitle2NT
+  {
+    text-align: center;
+  }
 }
 
 
@@ -421,162 +578,6 @@ OS SEGUINTES ELEMENTOS. */
       font-size: 3.4em;
     }
 
-}
-
-*
-{
-  box-sizing: border-box;
-}
-
-/* CONFIGURAÇÕES GERAIS DO BODY */
-
-body
-{
-  margin: 0px;
-  border: 1px solid rgb(234, 0, 255);
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 12px;
-  background-color: black;
-  min-width: 150px;
-}
-
-/* CONFIGURAÇÃO BÁSICA DO BACKGROUND */
-
-#particles-js 
-{
-	height: 100vh; 
-	width: 100%;
-  position: fixed;
-  z-index: -1;
-}
-
-/* CONFIGURAÇÕES DA LOGO QUE APARECE NA NAVBAR */
-
-.logo img
-{
-  width: 4.2rem;
-  margin: .5rem;
-  margin-right: 1.5rem;
-}
-
-/*CONFIGURAÇÕES DA NAVBAR: */
-
-.navbar
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: rgba(214, 214, 214, 0.048);
-    width: 100%;
-}
-
-.navbar-links 
-{
-  height: 100%;
-  margin-bottom: 0rem;
-}
-
-.navbar-links ul
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li
-{
-  list-style-type: none;
-}
-
-.navbar-links li a
-{
-  text-decoration: none;
-  color: white;
-  padding: 2.06rem;
-  display: block;
-  font-size: 1.3em;
-  font-family:'Cinzel', serif, 'Times New Roman';
-}      
-
-
-.navbar-links li:hover
-{
-  background-color: rgba(214, 214, 214, 0.185);
-  color: rgb(255, 255, 255);
-  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
-  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
-  text-shadow:0px 0px 5px rgb(0, 0, 0);
-}
-
-/* CONFIGURAÇÃO DA NAVBAR MOBILE: */
-
-.botaomenu{
-  position: absolute;
-  top: 1.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.botaomenu .bar
-{
-  height: 2.7px;
-  width: 26px;
-  background-color: rgba(214, 214, 214, 0.911);
-  border-radius: 10px;
-}
-
-.botaomenu #bar1
-{
-  opacity: 90%;
-}
-
-.botaomenu #bar2
-{
-  opacity: 65%;
-}
-
-.botaomenu #bar3
-{
-  opacity: 40%;
-}
-
-
-.botoesato-bloco
-{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 5%;
- 
-}
-
-.botoesato-bloco #atobt
-{
-  text-decoration: none;
-  color:rgb(0, 255, 34);
-  text-align: center;
-  border-radius: 3px;
-  font-size: 2em;
-
-  font-family: 'Staatliches', 'Times New Roman', Times, serif;
-  font-weight: bold;
-  border: 1px rgba(255, 92, 255, 0.822) solid;
-  background-color: rgba(255, 255, 255, 0.13);
-  text-shadow:  rgb(0, 0, 0) 0.1rem 0.03rem 0.1rem;
-}
-
-.botoesato-bloco #atobt:hover
-{
-  border: 1px rgba(0, 255, 34, 0.822) dashed;
-  color:rgba(255, 92, 255, 0.822);
 }
 
 /* AJUSTES DO TITULO DA PAGINA */
