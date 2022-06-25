@@ -9,7 +9,12 @@
     font-size: 3em !important;
   }
 
-  .apresentacao #normaltext
+  .devapresentacao .textapresentacao #normaltext
+  {
+    font-size:1.1em;
+  }
+
+  .introducao #normaltext
   {
     font-size:1.1em;
   }
@@ -84,6 +89,11 @@
 
 .devapresentacao .fotoapresentacao img
 {
+  width: 70%;
+}
+
+.devapresentacao .fotoapresentacao
+{
   width: 100%;
 }
 
@@ -94,7 +104,12 @@
 
 @media (max-width: 400px) and (min-width: 200px)
 {
-  .roteiro #normaltext
+  .devapresentacao .textapresentacao #normaltext
+  {
+    font-size:1.2em;
+  }
+
+  .introducao #normaltext
   {
     font-size:1.2em;
   }
@@ -152,7 +167,7 @@
 
 .devapresentacao .fotoapresentacao img
 {
-  width: 100%;
+  width: 70%;
 }
 
 }
@@ -164,7 +179,12 @@ OS SEGUINTES ELEMENTOS. */
 
 @media (min-width: 400px) and (max-width: 767px)
 {
-  .roteiro #normaltext
+  .devapresentacao .textapresentacao #normaltext
+  {
+    font-size:1.2em;
+  }
+
+  .introducao #normaltext
   {
     font-size:1.2em;
   }
@@ -204,13 +224,27 @@ OS SEGUINTES ELEMENTOS. */
   {
     flex-wrap: wrap;
   }
+  .devapresentacao .fotoapresentacao
+  {
+  width: 100%;
+  }
+
+  .devapresentacao .fotoapresentacao img
+  {
+  width: 70%;
+  }
 }
 
 
 
 @media (min-width: 767px) and (max-width: 900px)
 {
-  .roteiro #normaltext
+  .devapresentacao .textapresentacao #normaltext
+  {
+    width: 85%;
+  }
+
+  .introducao #normaltext
   {
     width: 85%;
   }
@@ -556,7 +590,7 @@ body
   transition-duration: 3.5s; 
 }
 
-.roteiro
+.introducao
 {
   border: 1px rgb(210, 97, 255) groove;
   border-radius: 3px;
