@@ -14,6 +14,16 @@
     font-size:1.1em;
   }
 
+  .devapresentacao .textapresentacao
+  {
+      width: 85%;
+  }
+
+  .devapresentacao
+  {
+    border-top: white thin dashed;
+  }
+
   .introducao #normaltext
   {
     font-size:1.1em;
@@ -97,6 +107,12 @@
   width: 100%;
 }
 
+.devapresentacao #subtitle2NT
+{
+  font-size: 1em;
+  text-align: center;
+}
+
 }
 
 
@@ -104,14 +120,27 @@
 
 @media (max-width: 400px) and (min-width: 200px)
 {
+
+  .devapresentacao .textapresentacao
+  {
+      width: 85%;
+  }
+
   .devapresentacao .textapresentacao #normaltext
   {
     font-size:1.2em;
   }
 
+  .devapresentacao
+  {
+    border-top: white thin dashed;
+  }
+
+
   .introducao #normaltext
   {
     font-size:1.2em;
+    padding: 3%;
   }
 
   .animaaudiotb #animaaudio
@@ -170,6 +199,12 @@
   width: 70%;
 }
 
+.devapresentacao #subtitle2NT
+{
+  font-size: 1.3em;
+  text-align: center;
+}
+
 }
 
 
@@ -183,6 +218,12 @@ OS SEGUINTES ELEMENTOS. */
   {
     font-size:1.2em;
   }
+
+  .devapresentacao
+  {
+    border-top: white thin dashed;
+  }
+
 
   .introducao #normaltext
   {
@@ -233,6 +274,11 @@ OS SEGUINTES ELEMENTOS. */
   {
   width: 70%;
   }
+
+.devapresentacao #subtitle2NT
+{
+  text-align: center;
+}
 }
 
 
@@ -616,6 +662,7 @@ body
 {
   color: white;
   text-transform: uppercase;
+  font-size: 1.7em;
 }
 
 .markersubt2NT
@@ -645,6 +692,7 @@ body
     justify-content: center;
     align-items: center;
     display: flex;
+    padding-top: 5%;
 }
 
 .fotoapresentacao
@@ -721,12 +769,12 @@ body
   color: rgb(212, 0, 255);
 }
 
-.roteiro ul
+.introducao ul
 {
   padding: 0;
 }
 
-.roteiro ul li
+.introducao ul li
 {
   text-align: justify;
   font-size: 1.3em;
@@ -739,7 +787,7 @@ body
 
 
 
-.roteiro ul li ul li
+.introducao ul li ul li
 {
   font-size: 1em;
   padding-right: 10%;
@@ -748,7 +796,7 @@ body
   list-style: none;
 }
 
-.roteiro:hover
+.introducao:hover
 {
   border: 1px rgb(0, 255, 255) groove;
 }
