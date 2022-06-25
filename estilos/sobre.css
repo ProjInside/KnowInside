@@ -522,6 +522,16 @@ OS SEGUINTES ELEMENTOS. */
   color: white;
 }
 
+.markersubt2NT
+{
+  background-color: rgba(0, 217, 255, 0.322);
+}
+
+.markersubt2NT:hover
+{
+  background-color: rgba(195, 0, 255, 0.267);
+}
+
 #normaltext
 {
   
@@ -536,23 +546,13 @@ OS SEGUINTES ELEMENTOS. */
 #linkNT
 {
   text-decoration: none;
-  color: rgb(9, 255, 0);
+  color: rgb(71, 233, 66);
 }
 
 #linkNT:hover
 {
   text-decoration: none;
   color: rgb(212, 0, 255);
-}
-
-.markersubt2NT
-{
-  background-color: rgba(187, 14, 255, 0.322);
-}
-
-.markersubt2NT:hover
-{
-  background-color: rgba(83, 243, 243, 0.589);
 }
 
 .roteiro ul
@@ -571,16 +571,10 @@ OS SEGUINTES ELEMENTOS. */
   
 }
 
-.roteiro ul li ul li::before
-{
-  content: "• ";
-  color: rgb(217, 255, 0);
-}
-
 .roteiro ul li::before
 {
   content: "• ";
-  color: rgb(0, 255, 255);
+  color: rgb(71, 233, 66);
 }
 
 .roteiro ul li ul li
@@ -690,11 +684,6 @@ OS SEGUINTES ELEMENTOS. */
   border: 2px rgba(255, 92, 255, 0.822) solid;
   background-color: rgba(255, 255, 255, 0.13);
   text-shadow:  rgb(0, 0, 0) 0.1rem 0.03rem 0.1rem;
-}
-
-#borda2:hover
-{
-  border: 1.5px rgb(144, 255, 92) dashed;
 }
 
 

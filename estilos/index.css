@@ -522,11 +522,6 @@ OS SEGUINTES ELEMENTOS. */
   align-items: center;
 }
 
-#borda2
-{
-  border: 1.5px rgb(255, 92, 255) solid;
-  border-radius: 4px;
-}
 
 #jogarbt
 {
@@ -540,14 +535,15 @@ OS SEGUINTES ELEMENTOS. */
   width: 6.5em;
   font-family: 'Staatliches', 'Times New Roman', Times, serif;
   font-weight: bold;
-  border: 2px rgba(255, 92, 255, 0.822) solid;
-  background-color: rgba(255, 255, 255, 0.13);
+  border: 2px rgb(247, 0, 255) solid;
+  background-color: rgba(255, 255, 255, 0.253);
   text-shadow:  rgb(0, 0, 0) 0.1rem 0.03rem 0.1rem;
 }
 
-#borda2:hover
+#jogarbt:hover
 {
-  border: 1.5px rgb(144, 255, 92) dashed;
+  border: 2px rgba(0, 255, 13, 0.822) dashed;
+  color:rgb(247, 0, 255);
 }
 
 /* ----- FOOTER ----- */
