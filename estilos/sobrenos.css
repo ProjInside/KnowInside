@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *
 {
   box-sizing: border-box;
@@ -155,8 +157,6 @@ body
 }
 
 
-@charset "UTF-8";
-
 /* MEDIA QUERIES QUE AJUDARAM NO AJUSTE DE ELEMENTOS DA PÁGINA: */
 
 @media (max-width: 200px)
@@ -208,13 +208,19 @@ body
   {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .footerblocos .infos .contatos
   {
     display:flex;
+    width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .footerblocos .infos .contatos
@@ -322,11 +328,20 @@ body
     width: 50%;
   }
 
+  .footerblocos .infos .redessociais
+  {
+    align-items: center;
+    justify-content: center;
+  }
+
   .footerblocos .infos .contatos
   {
     display:flex;
+    width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .titulo1block #title1
@@ -414,6 +429,16 @@ OS SEGUINTES ELEMENTOS. */
     font-size: 4.8em !important;
   }
 
+  .footerblocos .infos .contatos
+  {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 @media (min-width: 200px) and (max-width: 550px)
@@ -435,6 +460,14 @@ OS SEGUINTES ELEMENTOS. */
   .devapresentacao #subtitle2NT
   {
     text-align: center;
+  }
+
+  .footerblocos .infos .contatos
+  {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -478,6 +511,14 @@ OS SEGUINTES ELEMENTOS. */
   {
     font-size: 6.5em !important;
   }
+  .footerblocos .infos .contatos
+  {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
 
 }
 
@@ -537,6 +578,7 @@ OS SEGUINTES ELEMENTOS. */
   .footerblocos .infos .contatos
   {
     display:flex;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -657,6 +699,7 @@ OS SEGUINTES ELEMENTOS. */
   text-align: center;
   font-size: 2em;
   font-family:'Cinzel', serif, 'Times New Roman';
+  
 }
 
 #subtitle2NT
@@ -664,6 +707,7 @@ OS SEGUINTES ELEMENTOS. */
   color: white;
   text-transform: uppercase;
   font-size: 1.7em;
+  top: 0;
 }
 
 .markersubt2NT
@@ -678,13 +722,12 @@ OS SEGUINTES ELEMENTOS. */
 
 #normaltext
 {
-  
   text-align: justify;
   font-size: 1.3em;
   line-height: 150%;
   color: white;
   font-family:'Slabo 27px', 'Times New Roman';
-  margin-bottom: 1.5em;
+  margin-bottom: 6%;
 }
 
 .devapresentacao
@@ -754,8 +797,12 @@ OS SEGUINTES ELEMENTOS. */
 .textapresentacao
 {
     width: 65%;
-}
+    float: top;
+    margin: 0 auto;
+    padding: 0 auto;
+    
 
+}
 
 
 #linkNT
@@ -899,6 +946,8 @@ footer
   display: block;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  align-items: center;
   width: 20%;
 }
 
