@@ -1,128 +1,5 @@
 @charset "UTF-8";
 
-*
-{
-  box-sizing: border-box;
-}
-
-/* CONFIGURAÇÕES GERAIS DO BODY */
-
-body
-{
-  margin: 0px;
-  border: 1px solid rgb(234, 0, 255);
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 12px;
-  background-color: black;
-  min-width: 150px;
-}
-
-/* CONFIGURAÇÃO BÁSICA DO BACKGROUND */
-
-#particles-js 
-{
-	height: 100vh; 
-	width: 100%;
-  position: fixed;
-  z-index: -1;
-}
-
-/* CONFIGURAÇÕES DA LOGO QUE APARECE NA NAVBAR */
-
-.logo img
-{
-  width: 4.2rem;
-  margin: .5rem;
-  margin-right: 1.5rem;
-}
-
-/*CONFIGURAÇÕES DA NAVBAR: */
-
-.navbar
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: rgba(214, 214, 214, 0.048);
-    width: 100%;
-}
-
-.navbar-links 
-{
-  height: 100%;
-  margin-bottom: 0rem;
-}
-
-.navbar-links ul
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li
-{
-  list-style-type: none;
-}
-
-.navbar-links li a
-{
-  text-decoration: none;
-  color: white;
-  padding: 2.06rem;
-  display: block;
-  font-size: 1.3em;
-  font-family:'Cinzel', serif, 'Times New Roman';
-}      
-
-
-.navbar-links li:hover
-{
-  background-color: rgba(214, 214, 214, 0.185);
-  color: rgb(255, 255, 255);
-  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
-  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
-  text-shadow:0px 0px 5px rgb(0, 0, 0);
-}
-
-/* CONFIGURAÇÃO DA NAVBAR MOBILE: */
-
-.botaomenu{
-  position: absolute;
-  top: 1.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.botaomenu .bar
-{
-  height: 2.7px;
-  width: 26px;
-  background-color: rgba(214, 214, 214, 0.911);
-  border-radius: 10px;
-}
-
-.botaomenu #bar1
-{
-  opacity: 90%;
-}
-
-.botaomenu #bar2
-{
-  opacity: 65%;
-}
-
-.botaomenu #bar3
-{
-  opacity: 40%;
-}
-
-
 /* MEDIA QUERIES QUE AJUDARAM NO AJUSTE DE ELEMENTOS DA PÁGINA: */
 
 @media (max-width: 200px)
@@ -132,7 +9,7 @@ body
     font-size: 3em !important;
   }
 
-  .explicacao #normaltext
+  .apresentacao #normaltext
   {
     font-size:1.1em;
   }
@@ -184,7 +61,6 @@ body
   {
     font-size: 2.8em !important;
   }
-
 .botoesato-bloco
 {
   display: flex;
@@ -209,7 +85,7 @@ body
 
 @media (max-width: 400px) and (min-width: 200px)
 {
-  .explicacao #normaltext
+  .roteiro #normaltext
   {
     font-size:1.2em;
   }
@@ -275,7 +151,7 @@ OS SEGUINTES ELEMENTOS. */
 
 @media (min-width: 400px) and (max-width: 767px)
 {
-  .explicacao #normaltext
+  .roteiro #normaltext
   {
     font-size:1.2em;
   }
@@ -312,7 +188,7 @@ OS SEGUINTES ELEMENTOS. */
 
 @media (min-width: 767px) and (max-width: 900px)
 {
-  .explicacao #normaltext
+  .roteiro #normaltext
   {
     width: 85%;
   }
@@ -445,6 +321,129 @@ OS SEGUINTES ELEMENTOS. */
 
 }
 
+*
+{
+  box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES GERAIS DO BODY */
+
+body
+{
+  margin: 0px;
+  border: 1px solid rgb(234, 0, 255);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  background-color: black;
+  min-width: 150px;
+}
+
+/* CONFIGURAÇÃO BÁSICA DO BACKGROUND */
+
+#particles-js 
+{
+	height: 100vh; 
+	width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+/* CONFIGURAÇÕES DA LOGO QUE APARECE NA NAVBAR */
+
+.logo img
+{
+  width: 4.2rem;
+  margin: .5rem;
+  margin-right: 1.5rem;
+}
+
+/*CONFIGURAÇÕES DA NAVBAR: */
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(214, 214, 214, 0.048);
+    width: 100%;
+}
+
+.navbar-links 
+{
+  height: 100%;
+  margin-bottom: 0rem;
+}
+
+.navbar-links ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li
+{
+  list-style-type: none;
+}
+
+.navbar-links li a
+{
+  text-decoration: none;
+  color: white;
+  padding: 2.06rem;
+  display: block;
+  font-size: 1.3em;
+  font-family:'Cinzel', serif, 'Times New Roman';
+}      
+
+
+.navbar-links li:hover
+{
+  background-color: rgba(214, 214, 214, 0.185);
+  color: rgb(255, 255, 255);
+  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
+  box-shadow:0 3px 10px 0 rgb(0, 0, 0);
+  text-shadow:0px 0px 5px rgb(0, 0, 0);
+}
+
+/* CONFIGURAÇÃO DA NAVBAR MOBILE: */
+
+.botaomenu{
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.botaomenu .bar
+{
+  height: 2.7px;
+  width: 26px;
+  background-color: rgba(214, 214, 214, 0.911);
+  border-radius: 10px;
+}
+
+.botaomenu #bar1
+{
+  opacity: 90%;
+}
+
+.botaomenu #bar2
+{
+  opacity: 65%;
+}
+
+.botaomenu #bar3
+{
+  opacity: 40%;
+}
+
+
 .botoesato-bloco
 {
   display: flex;
@@ -535,7 +534,7 @@ OS SEGUINTES ELEMENTOS. */
   transition-duration: 3.5s; 
 }
 
-.explicacao
+.roteiro
 {
   border: 1px rgb(210, 97, 255) groove;
   border-radius: 3px;
@@ -583,6 +582,76 @@ OS SEGUINTES ELEMENTOS. */
   margin-bottom: 1.5em;
 }
 
+.devapresentacao
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.fotoapresentacao
+{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.redessociaisdev
+{
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1%;
+
+}
+
+.redessociaisdev ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redessociaisdev ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.redessociaisdev ul li img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.redessociaisdev ul li img a
+{
+    text-decoration: none;
+}
+
+.fotoapresentacao img
+{
+    width: 35%;
+}
+
+.textapresentacao
+{
+    width: 65%;
+}
+
+
+
 #linkNT
 {
   text-decoration: none;
@@ -595,12 +664,12 @@ OS SEGUINTES ELEMENTOS. */
   color: rgb(212, 0, 255);
 }
 
-.explicacao ul
+.roteiro ul
 {
   padding: 0;
 }
 
-.explicacao ul li
+.roteiro ul li
 {
   text-align: justify;
   font-size: 1.3em;
@@ -611,13 +680,9 @@ OS SEGUINTES ELEMENTOS. */
   
 }
 
-.explicacao ul li::before
-{
-  content: "• ";
-  color: rgb(71, 233, 66);
-}
 
-.explicacao ul li ul li
+
+.roteiro ul li ul li
 {
   font-size: 1em;
   padding-right: 10%;
@@ -626,105 +691,11 @@ OS SEGUINTES ELEMENTOS. */
   list-style: none;
 }
 
-.explicacao:hover
+.roteiro:hover
 {
   border: 1px rgb(0, 255, 255) groove;
 }
 
-/* AJUSTES DO CONTAINER DE DIVULGAÇÃO DO AUDIO */
-
-.audio
-{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4%;
-}
-
-.secaudio
-{
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  max-width: 850px;
-}
-
-.headphonetb
-{
-  width: 35%;
-  display: flex;
-  flex-direction: row;    
-}
-
-#headphone
-{
-  width: 65%;
-}
-
-.animaaudiotb
-{
-  width: 65%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#animaaudio
-{
-  opacity: 100%;
-  font-size: 3.3em;
-  width: 100%;
-  color:white;
-  font-family: 'Bebas Neue', cursive, 'Times New Roman';
-  text-shadow:  rgb(139, 139, 139) 0.1rem 0.07rem 0.1rem;
-}
-
-#animaaudio:hover
-{
-  color:rgb(255, 255, 255);
-  text-shadow:  rgb(1, 255, 56) 0.1rem 0.05rem 0.1rem;
-  font-family: 'Bebas Neue', cursive, 'Times New Roman'; 
-}
-
-/* AJUSTES DO BOTÃO DE JOGAR */
-
-.botaojogar
-{
-  width: 100%;
-  display: flex;
- 
-  justify-content: center;
-  align-items: center;
-}
-
-#borda2
-{
-  border: 1.5px rgb(255, 92, 255) solid;
-  border-radius: 4px;
-}
-
-#jogarbt
-{
-  color:rgb(0, 255, 34);
-  text-align: center;
-  padding: 1px;
-  padding-left: 3.5%;
-  padding-right: 3.5%;
-  border-radius: 3px;
-  font-size: 1.5em;
-  width: 6.5em;
-  font-family: 'Staatliches', 'Times New Roman', Times, serif;
-  font-weight: bold;
-  border: 2px rgba(255, 92, 255, 0.822) solid;
-  background-color: rgba(255, 255, 255, 0.13);
-  text-shadow:  rgb(0, 0, 0) 0.1rem 0.03rem 0.1rem;
-}
 
 
 /* ----- FOOTER ----- */
