@@ -145,6 +145,7 @@ body
   .roteiro .li2NT
   {
     font-size: 1em !important;
+    padding-right: 2% !important;
   }
 
   .roteiro .li3NT
@@ -235,6 +236,7 @@ body
   .roteiro .li2NT
   {
     font-size: 1.1em !important;
+    padding-right: 2% !important;
   }
 
   .roteiro .li3NT
@@ -315,6 +317,7 @@ OS SEGUINTES ELEMENTOS. */
   .roteiro .li2NT
   {
     font-size: 1.2em !important;
+    padding-right: 2% !important;
   }
 
   .roteiro .li3NT
@@ -646,7 +649,7 @@ OS SEGUINTES ELEMENTOS. */
 .roteiro ul li ul li
 {
   font-size: 1em;
-  padding-right: 10%;
+  padding-right: 5%;
   padding-bottom: 1.5%;
   padding-top: 1%;
   list-style: none;
