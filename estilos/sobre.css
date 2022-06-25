@@ -530,7 +530,7 @@ OS SEGUINTES ELEMENTOS. */
   line-height: 150%;
   color: white;
   font-family:'Slabo 27px', 'Times New Roman';
-
+  margin-bottom: 1.5em;
 }
 
 #linkNT
@@ -542,7 +542,7 @@ OS SEGUINTES ELEMENTOS. */
 #linkNT:hover
 {
   text-decoration: none;
-  color: rgb(164, 0, 197);
+  color: rgb(212, 0, 255);
 }
 
 .markersubt2NT
@@ -555,6 +555,11 @@ OS SEGUINTES ELEMENTOS. */
   background-color: rgba(83, 243, 243, 0.589);
 }
 
+.roteiro ul
+{
+  padding: 0;
+}
+
 .roteiro ul li
 {
   text-align: justify;
@@ -563,6 +568,13 @@ OS SEGUINTES ELEMENTOS. */
   color: white;
   font-family:'Times New Roman';
   list-style: none;
+  
+}
+
+.roteiro ul li ul li::before
+{
+  content: "• ";
+  color: rgb(217, 255, 0);
 }
 
 .roteiro ul li::before
@@ -578,12 +590,6 @@ OS SEGUINTES ELEMENTOS. */
   padding-bottom: 1.5%;
   padding-top: 1%;
   list-style: none;
-}
-
-.roteiro ul li ul li::before
-{
-  content: "• ";
-  color: rgb(217, 255, 0);
 }
 
 .roteiro:hover

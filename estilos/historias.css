@@ -132,14 +132,29 @@ body
     font-size: 3em !important;
   }
 
-  .apresentacao #normaltext
+  .roteiro #normaltext
   {
-    font-size:1.1em;
+    font-size: 1em !important;
+  }
+
+  .roteiro .li1NT
+  {
+    font-size: 1em !important;
+  }
+
+  .roteiro .li2NT
+  {
+    font-size: 1em !important;
+  }
+
+  .roteiro .li3NT
+  {
+    font-size: 1em !important;
   }
 
   .animaaudiotb #animaaudio
   {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .footerblocos
@@ -182,7 +197,7 @@ body
   }
   .titulo1block #title1
   {
-    font-size: 2.8em !important;
+    font-size: 2em !important;
   }
 .botoesato-bloco
 {
@@ -195,6 +210,11 @@ body
  
 }
 
+.roteiro ul
+{
+  padding: 0;
+}
+
 }
 
 
@@ -204,7 +224,22 @@ body
 {
   .roteiro #normaltext
   {
-    font-size:1.2em;
+    font-size: 1.3em !important;
+  }
+
+  .roteiro .li1NT
+  {
+    font-size: 1.1em !important;
+  }
+
+  .roteiro .li2NT
+  {
+    font-size: 1.1em !important;
+  }
+
+  .roteiro .li3NT
+  {
+    font-size: 1.1em !important;
   }
 
   .animaaudiotb #animaaudio
@@ -252,6 +287,11 @@ body
  
 }
 
+.roteiro ul
+{
+  padding: 0;
+}
+
 
 }
 
@@ -264,7 +304,22 @@ OS SEGUINTES ELEMENTOS. */
 {
   .roteiro #normaltext
   {
-    font-size:1.2em;
+    font-size: 1.4em !important;
+  }
+
+  .roteiro .li1NT
+  {
+    font-size: 1.2em !important;
+  }
+
+  .roteiro .li2NT
+  {
+    font-size: 1.2em !important;
+  }
+
+  .roteiro .li3NT
+  {
+    font-size: 1.2em !important;
   }
 
   .animaaudiotb #animaaudio
@@ -294,6 +349,11 @@ OS SEGUINTES ELEMENTOS. */
     font-size: 4.8em !important;
   }
 
+  .roteiro ul
+  {
+    padding: 0;
+  }
+
 }
 
 
@@ -301,7 +361,22 @@ OS SEGUINTES ELEMENTOS. */
 {
   .roteiro #normaltext
   {
-    width: 85%;
+    font-size: 1.5em !important;
+  }
+
+  .roteiro .li1NT
+  {
+    font-size: 1.2em !important;
+  }
+
+  .roteiro .li2NT
+  {
+    font-size: 1.2em !important;
+  }
+
+  .roteiro .li3NT
+  {
+    font-size: 1.3em !important;
   }
 
   .animaaudiotb #animaaudio
@@ -495,6 +570,7 @@ OS SEGUINTES ELEMENTOS. */
   align-items: center;
 }
 
+
 .roteiro
 {
   border: 1px rgb(210, 97, 255) groove;
@@ -524,12 +600,11 @@ OS SEGUINTES ELEMENTOS. */
 
 #normaltext
 {
-  
-  text-align: justify;
   font-size: 1.3em;
   line-height: 150%;
   color: white;
   font-family:'Slabo 27px', 'Times New Roman';
+  margin-bottom: 8%;
 
 }
 
@@ -553,12 +628,6 @@ OS SEGUINTES ELEMENTOS. */
   list-style: none;
 }
 
-.roteiro ul li::before
-{
-  content: "• ";
-  color: rgb(0, 255, 255);
-}
-
 .roteiro ul li ul li
 {
   font-size: 1em;
@@ -568,10 +637,25 @@ OS SEGUINTES ELEMENTOS. */
   list-style: none;
 }
 
-.roteiro ul li ul li::before
+/*.roteiro ul li::before*/
+.li1NT::before
+{
+  content: "• ";
+  color: rgb(0, 255, 255);
+}
+
+/*.roteiro ul li ul li::before*/
+.li2NT::before
 {
   content: "• ";
   color: rgb(217, 255, 0);
+}
+
+/*.roteiro ul li ul li ul li::before*/
+.li3NT::before
+{
+  content: "• ";
+  color: rgb(204, 0, 255);
 }
 
 .roteiro:hover
