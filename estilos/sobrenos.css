@@ -77,6 +77,15 @@
   font-size: .9em;
   padding: 5%;
 }
+.devapresentacao
+{
+  flex-wrap: wrap;
+}
+
+.devapresentacao .fotoapresentacao img
+{
+  width: 100%;
+}
 
 }
 
@@ -141,6 +150,10 @@
   padding: 5%;
 }
 
+.devapresentacao .fotoapresentacao img
+{
+  width: 100%;
+}
 
 }
 
@@ -184,6 +197,15 @@ OS SEGUINTES ELEMENTOS. */
   }
 
 }
+
+@media (min-width: 200px) and (max-width: 550px)
+{
+  .devapresentacao
+  {
+    flex-wrap: wrap;
+  }
+}
+
 
 
 @media (min-width: 767px) and (max-width: 900px)
@@ -559,6 +581,7 @@ body
 #subtitle2NT
 {
   color: white;
+  text-transform: uppercase;
 }
 
 .markersubt2NT
