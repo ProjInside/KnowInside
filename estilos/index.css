@@ -673,6 +673,8 @@ footer
   margin-left: auto;
   margin-right: auto;
   width: 20%;
+  border: white .1em dashed;
+  border-radius: 12em;
 }
 
 .footerblocos .redessociais ul li a

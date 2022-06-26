@@ -792,7 +792,21 @@ OS SEGUINTES ELEMENTOS. */
 .fotoapresentacao img
 {
     width: 35%;
+    margin-bottom: 01.3em;
 }
+
+#redephoto
+{
+  border: white 0.1em solid;
+  border-radius: 2em;
+}
+
+#devphoto
+{
+  border: rgba(255, 255, 255, 0.377) 0.1em solid;
+  border-radius: .2em;
+}
+
 
 .textapresentacao
 {
@@ -948,6 +962,8 @@ footer
   margin-right: auto;
   justify-content: center;
   align-items: center;
+  border: white .1em dashed;
+  border-radius: 12em;
   width: 20%;
 }
 
