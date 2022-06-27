@@ -583,6 +583,7 @@ OS SEGUINTES ELEMENTOS. */
     flex-wrap: wrap;
   }
 
+
 }
 
 
@@ -597,6 +598,10 @@ OS SEGUINTES ELEMENTOS. */
     {
       font-size: 7.0em !important;
     }
+  .fotoapresentacao img
+  {
+      width: 40%;
+  }
 
 }
 
@@ -610,6 +615,11 @@ OS SEGUINTES ELEMENTOS. */
     .titulo1block #title1
     {
       font-size: 7.5em !important;
+    }
+
+    .fotoapresentacao img
+    {
+        width: 50%;
     }
 }
 
