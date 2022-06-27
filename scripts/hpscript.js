@@ -9,6 +9,7 @@ function NavBarResponsiva() {
         navbarLinks.classList.toggle('active');
     });
 }
+
 /*
             let resolucao = screen.width;
 

@@ -769,3 +769,18 @@ footer
 
 }
 
+.btn-topo
+{
+
+  position: fixed;
+  top: 480px;
+  margin-left: 1260px;
+  font-family: tahoma, arial;
+  font-size: 1.5em;
+
+
+
+  border: 2px solid #333;
+  border-radius: 5px;
+
+}
